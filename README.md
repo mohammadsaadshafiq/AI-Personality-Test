@@ -2,13 +2,31 @@
 
 ## Getting Started
 
-I have developed this theme as a personal proyect. I have taked the inspiration (and basically all the design) from the wonderful work of Britanny Chiang. You can visit her repo [here](https://github.com/bchiang7/v4)
+1. Title Name: 
+PersonaGuid ( Personality + Guidance )
 
-Because I'm not a ReactJS expert (language of the Britanny's proyect), and I liked so much the design, I decided to develop this proyect with Angular's architecture. The website is not connected to any api yet, nither it has dinamic content so that all the content is static inside the HTML files in Angular. I want to connect it to an API in the future, from where i can manage in an easy way without having touch the HTML files in angular.
+2. Short description:
 
-If you have any idea or you just want to contribute in this repo in order to improve the development architecture, I invite you to do it! If you have some suggestion to me, i will be glade to recibe it
+What are the Big-5-personality traits, and how are they suitable?
+
+Five- Factor-Model FFM is a set of personality traits commonly used in psychology. These traits are as follows:
+Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism. 
+Each person has a unique set and can be represented across a spectrum. These traits have been known to be the most accurate in depicting human personalities. A lot of research has validated their accuracy. However, no personality can be 100 per cent and represented accurately.
+
+About the Platform 🚀
+Our aim is to portray this platform as personal assistance to improve your personality. It can give you suggestions and can further explain your results in a more understandable manner.  
+To put it into more accurate words this platform is a more personalized version of ChatGpt, as it has prior knowledge of your personality scores.
+
+Furthermore, this platform can be used to answer personalized behavioural questions and generate a short paragraph that can be added to resumes or personal statements.  
+
+How it works ✏️
+The user answers Big 5 questions in a form manner (example)
+The answers are sent to API and the model-trained API omits results
+The results are given as input to Chat Gpt API, it omits the results in a readable text form.
+Users can ask questions about their personality and the chat continues with the help of Chat Gpt API.
 
 ### Prerequisites
+You need your own api Key for Open AI and Rapid API
 
 You need to have npm and Angular CLI installed in your pc. Npm is aviable with NodeJS in [here](https://nodejs.org/es/). After you install npm, install Angular CLI by typping the following command in your terminal
 
@@ -32,15 +50,8 @@ npm start
 ```
 Wait to compile and go to [http://localhost:4200](http://localhost:4200) after compile finish
 
+You need your own api Key for Open AI and Rapid API
+
 ### Wait! I does not have finished yet!
 
 I want to quote what Brittanty has added in her proyect:
-
->## 🚨 Forking this repo (please read!)
-
->Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
-
-As I have made an attribution to Brittany, i wait you do the same with both in this proyect. Thank you :)
-
-Sorry my bad English

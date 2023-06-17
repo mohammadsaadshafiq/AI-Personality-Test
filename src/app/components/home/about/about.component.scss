@@ -1,105 +1,116 @@
-@import "./../../../../variables.scss";
-
-.about{
-
-    .about-description{
-        margin-top: 30px;
-        max-width: 480px;
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  
+  &.about {
+    width: 80%;
+    margin: 0 auto;
+    
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
     }
-
-    .about-img-container{
-        width: 324px;
-        margin: auto;
-
-        &:after{
-            content: '';
-            border: 2px solid $Green;
-            z-index: 0;
-            display: block;
-            position: relative;
-            width: 300px;
-            height: 300px;
-            border-radius: 3px;
-            bottom: 290px;
-            left: 23px;
-
-        }
-
-        img{
-            z-index: 2;
-            position: relative;
-        }
+    
+    .question {
+      margin-bottom: 10px;
+      font-size: 18px;
     }
-
-    .skills-list{
-        display: grid;
-        grid-template-columns: repeat(2,minmax(140px,200px));
-        overflow: hidden;
-        padding: 0;
-        margin: 20px 0 0 0;
-        list-style: none;
+    
+    select {
+      margin-bottom: 20px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 100%;
     }
-
-    .skill-element{
-        position: relative;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        font-size: 13px;
-        font-family: $CodeFont;
-        color: $Slate;
-        span{
-          padding-bottom: 5px;
-        }
-
-        &:before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: $Green;
-            font-size: 14px;
-            line-height: 12px;
-        }
+    
+    button {
+      padding: 12px 24px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 6px;
     }
-
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1300px){
-    .about-img-container{
-        margin-left: auto;
-        margin-right: 0;
+.chat-container {
+  margin-bottom: 20px;
+  
+  .chat-item {
+    margin-bottom: 10px;
+    
+    .system-message {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 16px;
     }
+    
+    .user-message {
+      background-color: #e0f2f1;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    .assistant-message {
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
 }
 
-@media (max-width: 500px){
-    .about{
-        .about-img-container img{
-            width: 200px;
-            height: 200px;
-        }
-        .about-img-container:after {
-            width: 200px;
-            height: 200px;
-            bottom: 190px;
-            left: 74px;
-        }
-    }
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  input[type="text"] {
+    padding: 30px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    margin-right: 10px;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 1000px;
+    max-width: 400px; /* Adjust the max-width value as needed */
+  }
+  button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+  }
 }
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
 
-@media (max-width: 500px){
-    .about{
-
-        .about-img-container {
-            width: 100%;
-
-            img{
-                width: 180px;
-                height: 180px;
-            }
-
-            &:after {
-                display: none;
-            }
-        }
-    }
+  .loader-text {
+    color: white;
+    font-size: 20px;
+  }
 }
 
