@@ -52,6 +52,3 @@ Wait to compile and go to [http://localhost:4200](http://localhost:4200) after c
 
 You need your own api Key for Open AI and Rapid API
 
-### Wait! I does not have finished yet!
-
-I want to quote what Brittanty has added in her proyect:
