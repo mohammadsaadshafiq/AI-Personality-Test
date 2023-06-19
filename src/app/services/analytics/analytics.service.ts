@@ -23,7 +23,7 @@ export class AnalyticsService {
     return this.http.post(this.Url,data,requestOptions )
   }
   generateResponse(body:string) {
-    const apiKey = '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';
+    const apiKey = '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';
     const headerDict = {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${apiKey}`
